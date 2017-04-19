@@ -8,12 +8,12 @@ import { AngularFireModule } from 'angularfire2';
 
 // Must export the config
 export const firebaseConfig = {
-    apiKey: "AIzaSyBdQmuJ7lwRsc0WrfvbVBouTSVkgV-9Wzw",
-    authDomain: "lazy-demi.firebaseapp.com",
-    databaseURL: "https://lazy-demi.firebaseio.com",
-    projectId: "lazy-demi",
-    storageBucket: "lazy-demi.appspot.com",
-    messagingSenderId: "848331258275"
+    apiKey: 'AIzaSyBdQmuJ7lwRsc0WrfvbVBouTSVkgV-9Wzw',
+    authDomain: 'lazy-demi.firebaseapp.com',
+    databaseURL: 'https://lazy-demi.firebaseio.com',
+    projectId: 'lazy-demi',
+    storageBucket: 'lazy-demi.appspot.com',
+    messagingSenderId: '848331258275'
 };
 
 @NgModule({

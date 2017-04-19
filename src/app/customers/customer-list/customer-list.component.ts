@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFire, FirebaseListObservable } from 'angularfire2'
 
 @Component({
   selector: 'app-customer-list',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerListComponent implements OnInit {
 
-  constructor() { }
+  customers: FirebaseListObservable<any[]>;
+
+  constructor(af: AngularFire) {
+    this.customers = af.database.list('/customers');
+  }
 
   ngOnInit() {
   }

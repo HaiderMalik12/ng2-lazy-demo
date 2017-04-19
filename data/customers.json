@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Haider",
+    "age": "21",
+    "address": "5A Block"
+  },
+  {
+    "name": "John",
+    "age": "22",
+    "address": "Bd Block"
+  },
+  {
+    "name": "Pape",
+    "age": "24",
+    "address": "C Block"
+  },
+  {
+    "name": "Kaleem",
+    "age": "31",
+    "address": "E 11"
+  },
+  {
+    "name": "Nuaman",
+    "age": "25",
+    "address": "E15"
+  },
+  {
+    "name": "Gmalil",
+    "age": "34",
+    "address": "5A Block"
+  }
+]
