@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Node.js",
+    "type": "IT",
+    "location": "E-Block"
+  },
+  {
+    "name": "SE",
+    "type": "IT",
+    "location": "F-Block"
+  },
+  {
+    "name": "Java",
+    "type": "IT",
+    "location": "V-Block"
+  },
+  {
+    "name": "Sails.js",
+    "type": "IT",
+    "location": "R-Block"
+  },
+  {
+    "name": "Vue.js",
+    "type": "IT",
+    "location": "B-Block"
+  },
+  {
+    "name": "Ember.js",
+    "type": "IT",
+    "location": "W-Block"
+  }
+]

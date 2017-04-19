@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {AngularFire, FirebaseListObservable} from 'angularfire2';
 
 @Component({
   selector: 'app-department-list',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DepartmentListComponent implements OnInit {
 
-  constructor() { }
+  departments: FirebaseListObservable<any[]>;
+
+  constructor(private af: AngularFire) {
+    this.departments = this.af.database.list('/departments');
+  }
 
   ngOnInit() {
   }
