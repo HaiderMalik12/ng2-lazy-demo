@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot -prod"
+    "postinstall": "ng build --aot -prod",
+    "deploy": "git push origin master && git push heroku master"
   },
   "private": true,
   "dependencies": {
@@ -48,7 +49,7 @@
     "typescript": "~2.2.0"
   },
   "engines": {
-    "node": "6.9.2",
-    "npm": "3.10.9"
+    "node": "7.8.0",
+    "npm": "4.2.0"
   }
 }
