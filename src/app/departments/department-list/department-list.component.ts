@@ -3,8 +3,26 @@ import {AngularFire, FirebaseListObservable} from 'angularfire2';
 
 @Component({
   selector: 'app-department-list',
-  templateUrl: './department-list.component.html',
-  styleUrls: ['./department-list.component.css']
+  template: `<table class="bordered">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Location</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr *ngFor="let dep of departments | async ">
+      <td>{{dep.name}}</td>
+      <td>{{dep.type}}</td>
+      <td>{{dep.location}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+
+  `
 })
 export class DepartmentListComponent implements OnInit {
 

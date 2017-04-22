@@ -3,8 +3,25 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2'
 
 @Component({
   selector: 'app-customer-list',
-  templateUrl: './customer-list.component.html',
-  styleUrls: ['./customer-list.component.css']
+  template:`
+    <table class="bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Address</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr *ngFor="let customer of customers | async ">
+        <td>{{customer.name}}</td>
+        <td>{{customer.age}}</td>
+        <td>{{customer.address}}</td>
+      </tr>
+      </tbody>
+    </table>
+  `
 })
 export class CustomerListComponent implements OnInit {
 

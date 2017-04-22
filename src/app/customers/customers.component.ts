@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-customers',
-  template: `<router-outlet></router-outlet>`,
-  styles: []
+  template: `<router-outlet></router-outlet>`
 })
 export class CustomersComponent implements OnInit {
 

@@ -17,9 +17,7 @@ import { Component } from '@angular/core';
        <router-outlet></router-outlet>
       </div>
       
-    </div>`,
-  styleUrls: ['./app.component.css']
+    </div>`
 })
 export class AppComponent {
-  title = 'app works!';
 }
